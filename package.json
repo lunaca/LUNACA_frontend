@@ -26,11 +26,17 @@
     "gatsby-plugin-sharp": "^2.13.2",
     "gatsby-source-filesystem": "^2.10.0",
     "gatsby-transformer-sharp": "^2.11.0",
+    "gsap": "^3.6.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-gsap": "^2.2.1",
+    "react-headroom": "^3.1.0",
     "react-helmet": "^6.1.0",
-    "react-script-tag": "^1.1.2"
+    "react-script-tag": "^1.1.2",
+    "react-scrollmagic": "^2.2.0",
+    "scrollmagic": "^2.0.8",
+    "swiper": "^6.4.11"
   },
   "devDependencies": {
     "prettier": "^2.2.1"

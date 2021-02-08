@@ -22,14 +22,27 @@ import { Testimonials } from './HomePage/Sections/Testimonials'
 import { Promo } from './HomePage/Sections/Promo'
 import { Footer } from './HomePage/Footer'
 import { Header } from './HomePage/Header'
+import { Controller, Scene } from 'react-scrollmagic'
+import Headroom from 'react-headroom'
 
 const Layout = ({ children }) => {
   return (
-    <div className='barba-container'>
+    <Controller>
       <Loader />
       <BackButton />
       <main className=''>
-        <Header />
+        <Headroom
+          style={{
+            webkitTransition: 'all .5s ease-in-out',
+            mozTransition: 'all .5s ease-in-out',
+            oTransition: 'all .5s ease-in-out',
+            transition: 'all .5s ease-in-out',
+            zIndex: 5000,
+          }}
+        >
+          <Header />
+        </Headroom>
+
         <Swiper />
         <AboutExcerpt />
         <PortfolioCards />
@@ -39,7 +52,7 @@ const Layout = ({ children }) => {
         <Testimonials />
         <Footer />
       </main>
-    </div>
+    </Controller>
   )
 }
 

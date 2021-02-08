@@ -4,15 +4,10 @@ import darkLogo from '../../assets/img/logo/logo-dark.png'
 export const Header = () => {
   const [isActive, setIsActive] = useState()
   return (
-    <header className='header -light -sticky-light js-header'>
+    <header className='header -light is-sticky -sticky-light js-header'>
       <div className='header__bar'>
         <div className='header__logo js-header-logo'>
-          <a href='home-1.html'>
-            <img className='header__logo__light' src={lightLogo} alt='logo' />
-          </a>
-          <a href='home-1.html'>
-            <img className='header__logo__dark' src={darkLogo} alt='logo' />
-          </a>
+          <img className='header__logo__dark' src={darkLogo} alt='logo' />
         </div>
 
         <div className='header__menu js-header-menu'>
